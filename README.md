@@ -6,7 +6,7 @@
 cd Event-Ticket-System
 python -m venv venv
 source venv/bin/activate
-pip install flask flask-cors flask-sqlalchemy
+pip install flask flask-cors flask-sqlalchemy flask_jwt_extended python-dotenv passlib requests pymysql
 ```
 
 3. Create Database in mysql named ``"event_ticketing"``
@@ -25,5 +25,6 @@ DB_NAME=event_ticketing
 
 5. Start app
 ```bash
-python backend/app.py
+export FLASK_APP=backend/app.py
+flask run
 ```
