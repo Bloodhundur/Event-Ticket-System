@@ -27,13 +27,13 @@ DB_NAME=event_ticketing
 
 *linux*
 ```bash
-export FLASK_APP=backend.app:create-app
+export FLASK_APP=backend.app:create_app
 
 flask run
 ```
 *windows*
 ```powershell
-$env:FLASK_APP="backend.app:create-app"
+$env:FLASK_APP="backend.app:create_app"
 flask run
 ```
 
